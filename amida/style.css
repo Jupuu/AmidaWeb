@@ -1,0 +1,287 @@
+body{
+  background-color: black;
+}
+h1{
+  text-align: center;
+  font-size: 4em;
+  color: whitesmoke;
+  font-family: "Montserrat Subrayada";
+}
+header{
+  width: 60%;
+  margin: 0 auto;
+}
+.bio{
+  width: 70%;
+  margin: 0 auto;
+  padding: 5% 0;
+  display: flex;
+  line-height: 1.5;
+  flex-direction: column;
+  color: whitesmoke;
+}
+hr{
+  width: 75%;
+  background-color: whitesmoke;
+}
+h2{
+  font-size: 2em;
+  text-align: center;
+  font-family: "Montserrat Subrayada";
+  color: whitesmoke;
+}
+p{
+  text-indent: 50px;
+  font-family: 'Dhurjati';
+  font-size: 1.5em;
+  color: whitesmoke;
+}
+#members{
+  transform: translateZ(0);
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: flex-start;
+  clear: both;
+}
+
+#members a{
+  display: block;
+  text-decoration: none;
+}
+
+.picture{
+  width: 16.66%;
+  height: 600px;
+  transition: width .5s ease-in-out;
+}
+.focus{
+  height: 600px;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+
+
+.tomoe{
+  display: block;
+  width: 20%;
+  position: fixed;
+  bottom: 0px;
+  left: 50px;
+  animation: rotate 4s;
+}
+/*<img class="tomoe" src="images/logo.png" alt="tomoe" /> */
+@keyframes rotate {
+  100%{
+    transform: rotate(360deg);
+  }
+
+}
+.active .focus{
+  opacity: 1;
+}
+.focus span{
+  position: absolute;
+  color: #353840;
+  font-size: 4em;
+  bottom: 0;
+  width: 50%;
+  text-align: center;
+  font-family: "Montserrat Subrayada"  ;
+  background-color: whitesmoke;
+
+}
+
+.picture:nth-child(1){
+  background: url(images/yuta-b.jpg) top center no-repeat;
+}
+
+.picture:nth-child(1) .focus{
+  background: url(images/yuta.jpg) top center no-repeat;
+}
+.picture:nth-child(2){
+  background: url(images/terry-b.jpg) top center no-repeat;
+}
+
+.picture:nth-child(2) .focus{
+  background: url(images/terry.jpg) top center no-repeat;
+}
+.picture:nth-child(3){
+  background: url(images/steve-b.jpg) no-repeat center;
+}
+
+.picture:nth-child(3) .focus{
+  background: url(images/steve.jpg) no-repeat center;
+}
+.picture:nth-child(4){
+  background: url(images/julio-b.jpg) center no-repeat;
+
+}
+
+.picture:nth-child(4) .focus{
+  background: url(images/julio.jpg) center no-repeat;
+}
+.picture:nth-child(5){
+  background: url(images/hogon-b.jpg) top center no-repeat;
+}
+
+.picture:nth-child(5) .focus{
+  background: url(images/hogon.jpg) top center no-repeat;
+}
+
+.picture:nth-child(6){
+  background: url(images/sarina-b.jpg) no-repeat center;
+}
+
+.picture:nth-child(6) .focus{
+  background: url(images/sarina.jpg) no-repeat center;
+}
+.picture:nth-child(7){
+  background: url(images/niko-b.jpg) no-repeat center;
+}
+
+.picture:nth-child(7) .focus{
+  background: url(images/niko.jpg) no-repeat center;
+}
+.picture.active{
+  width: 50%;
+}
+.picture.inactive{
+  width: 10%;
+}
+#member{
+  transform: translateZ(0);
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: flex-start;
+  clear: both;
+}
+
+#member a{
+  display: block;
+  text-decoration: none;
+}
+
+.pictures{
+  width: 16.66%;
+  height: 600px;
+  transition: width .5s ease-in-out;
+}
+.pictures:nth-child(1){
+  background: url(images/niko-b.jpg) top center no-repeat;
+}
+
+.pictures:nth-child(1) .focus{
+  background: url(images/niko.jpg) top center no-repeat;
+}
+.pictures:nth-child(2){
+  background: url(images/sui-b.jpg) top center no-repeat;
+}
+
+.pictures:nth-child(2) .focus{
+  background: url(images/Sui.jpg) top center no-repeat;
+}
+.pictures:nth-child(3){
+  background: url(images/peter-b.jpg) no-repeat center;
+}
+
+.pictures:nth-child(3) .focus{
+  background: url(images/peter.jpg) no-repeat center;
+}
+.pictures:nth-child(4){
+  background: url(images/ball-b.jpg) center no-repeat;
+
+}
+
+.pictures:nth-child(4) .focus{
+  background: url(images/ball.jpg) center no-repeat;
+}
+.pictures:nth-child(5){
+  background: url(images/deco-b.jpg) top center no-repeat;
+}
+
+.pictures:nth-child(5) .focus{
+  background: url(images/deco.jpg) top center no-repeat;
+}
+
+.pictures:nth-child(6){
+  background: url(images/yosh-b.jpg) no-repeat center;
+}
+
+.pictures:nth-child(6) .focus{
+  background: url(images/yosh.jpg) no-repeat center;
+}
+.pictures.active{
+  width: 50%;
+}
+.pictures.inactive{
+  width: 10%;
+}
+ul{
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+li{
+  color: whitesmoke;
+  font-family: 'Dhurjati';
+  font-size: 1.5em;
+}
+.book{
+  width: 70%;
+  margin: 0 auto;
+  padding: 12px;
+  display: flex;
+  line-height: 1;
+  flex-direction: column;
+  color: whitesmoke;
+  align-items: center;
+}
+span{
+  text-align: center;
+  color: whitesmoke;
+  font-size: 3em;
+  width: 50%;
+  font-family: 'Dhurjati'  ;
+}
+
+footer{
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: whitesmoke;
+  margin: 0 auto;
+}
+i{
+  color: whitesmoke;
+}
+
+.crew{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1%;
+
+
+}
+.peep{
+  align-self: center;
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+
+}
+.about{
+  text-align: left;
+  margin: 0 auto;
+  width: 80%;
+  padding: 2%;
+}
+.music{
+  padding: 5%;
+}
